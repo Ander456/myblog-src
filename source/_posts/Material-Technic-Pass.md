@@ -205,7 +205,7 @@ PS: 找到一个threejs实现描边的Pass[](https://threejs.org/examples/webgl_
 Threejs是基于webl封装的一个framework，CococCreator的render是基于opengl的，所以原理上是大相径庭的。
 Material = shader 或者 狭义的时候后还会 = shader + pass(深度模板测试等的设置)
 Mesh = geometry + material
-Technique: 在ccc的渲染框架里表示的shader参数，shader数值
+Technique: 在ccc的渲染框架里表示的shader参数，shader数值以及实现方案，多Technique就是为了在不同硬件上采用不同质量的参数算法实现低性能或者高性能的效果的
 pass：在ccc里表示深度模板测试等的设置 在Threejs里是后期处理的通道pipeline
 
 
