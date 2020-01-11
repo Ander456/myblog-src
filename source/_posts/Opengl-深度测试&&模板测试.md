@@ -115,9 +115,10 @@ PS:补充一些概念再
 ### 核心思路
 ```
 if( (referenceValue & maskValue) comparisonFunction (stencilBufferValue & maskValue) ){
-    通过测试，保留像素
+    通过测试，渲染片段（像素）
 }
 else{
     丢弃像素
 }
+_*CompFunc 只是决定了片段是否渲染，但是并没有决定模板缓冲区stencil buffer该如何更新，这个需要靠StencilOp*_
 ```
